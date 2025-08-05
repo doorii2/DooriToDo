@@ -9,7 +9,12 @@ header {
   background-color: rgb(31, 31, 31); /* 헤더 배경 색 */
   color: white;
   padding: 20px 20px; /*좌우 여백*/
+  width: 100%; /* 화면 너비에 맞게 전체 너비 차지 */
+  z-index: 1000; /* 다른 콘텐츠 위에 고정되도록 z-index 설정 */
   height: 40px; /*헤더 높이*/
+  position: fixed;
+  top:0;
+  left: 0;
 }
 
 /*사실상 로고..*/
@@ -52,4 +57,5 @@ nav ul {
 .nav-button:hover{
     color: rgb(225, 255, 0);
 } /*호버 시 바뀔 색상 설정*/
+
 
