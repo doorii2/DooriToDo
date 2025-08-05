@@ -1,0 +1,55 @@
+*{
+    font-family: Roboto, sans-serif;
+}
+
+header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: rgb(31, 31, 31); /* 헤더 배경 색 */
+  color: white;
+  padding: 20px 20px; /*좌우 여백*/
+  height: 40px; /*헤더 높이*/
+}
+
+/*사실상 로고..*/
+.profile-button{
+    list-style: none;
+    display: flex;
+    color: white;
+    font-size: 30px;
+    background-color: transparent;
+    border:none;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: space-between; 
+    width:100%;
+}
+
+/*네비게이션 바 스타일*/
+nav ul {
+    list-style: none; 
+    display: flex; 
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+/*네비게이션 버튼 스타일*/
+.nav-button{
+    background-color: transparent;
+    border: none;
+    font-size: 19px;
+    color:white;
+    cursor: pointer;
+    margin-right: 50px;
+    padding: 10px 30px; /* 여백 추가 */
+    transition: color 0.3s ease; /* 호버 시 부드럽게 변화 */
+}
+
+.nav-button:hover{
+    color: rgb(225, 255, 0);
+} /*호버 시 바뀔 색상 설정*/
+
