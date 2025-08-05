@@ -12,12 +12,17 @@
     <link rel="stylesheet" href="header.css"> 
     <link rel="stylesheet" href="body.css">
     <!--css 연결-->
+    <script src="dooripro.js"></script>
+    <!--Js 연결-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--AOS 소스-->
 </head>
 
 <body>
     <!--헤더 영역-->
     <header> 
-            <button class="profile-button" onclick="window.location.reload();">Doori's profile</button> 
+            <button class="profile-button" onclick="window.location.reload();">DFS</button> 
         <nav>
             <ul class="profile-container">
                 <li class="profile-item"><button class="nav-button">About Me</button></li>
@@ -31,30 +36,32 @@
     <!--바디 영역-->
     <main>
         <!--그리드 섹션-->
-        <section class="grid-container">
-            <div class="grid-image img1">
-                <img src="bluesky.jpg">
-            </div>
-            <div class="grid-item item1">
-                item1
-            </div>
-            <div class="grid-item item1">
-                item2
-            </div>
-            <div class="grid-image img2">
-                <img src="snoopy3.webp">
-            </div>
-            <div class="grid-image img3">
-                <img src="studying.jpg">
-            </div>
-            <div class="grid-item item3">
-                item3
-            </div>
-        </section>
-        
 
+        <section class="grid-container">
+            <div class="grid-image img1" data-aos="fade-right">
+                <img src="snoopy3.webp">
+            </div><!--이미지 1-->
+            <div class="grid-item item1" data-aos="fade-left">
+                <p>DFS<br>Doori's First Project</p>
+                <button> View More </button>
+            </div><!--요소 1-->
+            <div class="grid-item item1" data-aos="fade-right">
+                <p>Hello,<br>World!</p>
+                <button> View More </button>
+            </div><!--요소 2-->
+            <div class="grid-image img2" data-aos="fade-left">
+                <img src="snoopy2.jpg">
+            </div><!--이미지 2-->
+            <div class="grid-image img3" data-aos="fade-right">
+                <img src="studying.jpg">
+            </div><!--이미지 3-->
+            <div class="grid-item item3" data-aos="fade-left">
+                <p>This is<br>very new<br>project!</p>
+                <button> View More </button>
+            </div><!--요소 3-->
+        </section>
     </main>
 
-
+<script>AOS.init();</script>
 </body>
 </html>
