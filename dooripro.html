@@ -18,17 +18,16 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--AOS 소스-->
 </head>
-
 <body>
     <!--헤더 영역-->
     <header> 
-            <button class="profile-button" onclick="window.location.reload();">DFS</button> 
+            <button class="profile-button" onclick="location.href='dooripro.html'">DFS</button> 
         <nav>
             <ul class="profile-container">
-                <li class="profile-item"><button class="nav-button">About Me</button></li>
-                <li class="profile-item"><button class="nav-button">Career</button></li>
-                <li class="profile-item"><button class="nav-button">Hobby</button></li>
-                <li class="profile-item"><button class="nav-button">Contact</button></li>
+                <li class="profile-item"><button class="nav-button" onclick="location.href='aboutme.html'">About Me</button></li>
+                <li class="profile-item"><button class="nav-button" onclick="location.href='career.html'">Career</button></li>
+                <li class="profile-item"><button class="nav-button" onclick="location.href='hobby.html'">Hobby</button></li>
+                <li class="profile-item"><button class="nav-button" onclick="location.href='contact.html'">Contact</button></li>
             </ul>
         </nav>
     </header>
@@ -36,7 +35,6 @@
     <!--바디 영역-->
     <main>
         <!--그리드 섹션-->
-
         <section class="grid-container">
             <div class="grid-image img1" data-aos="fade-right">
                 <img src="snoopy3.webp">
@@ -60,6 +58,7 @@
                 <button> View More </button>
             </div><!--요소 3-->
         </section>
+        
     </main>
 
 <script>AOS.init();</script>

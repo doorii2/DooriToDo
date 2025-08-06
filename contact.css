@@ -1,0 +1,57 @@
+*{
+    font-family: Roboto, sans-serif;
+    background-color: rgb(31,31,31);
+}
+
+main {
+  padding-top: 100px; /* 헤더 높이만큼 띄우기 */
+  height: calc(100vh - 100px);
+}
+
+.content-area {
+  height: 100%;
+  display: flex;
+  justify-content: center; /* 가로 가운데 정렬 */
+  align-items: center;     /* 세로 가운데 정렬 */
+  text-align: center;
+}
+
+.content-area p {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+
+.content-area p a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content-area p a:hover{
+    color: rgb(255,255,0);
+    transition: color 0.3s ease; 
+}
+
+#copyTxt{
+    border:none;
+    font-size: 25px;
+    color:white;
+}
+
+button{
+    border-style:solid;
+    border-color:white;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    background-color:transparent;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+
+button:hover{
+    color: rgb(255,255,0);
+}
