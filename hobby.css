@@ -1,0 +1,56 @@
+*{
+    font-family: Roboto, sans-serif;
+    background-color: rgb(31,31,31);
+}
+
+html{
+  overflow-y: scroll;
+}
+
+main {
+  height: calc(100vh - 100px);
+  padding-top: 60px;
+}
+
+.content-area {
+  height: 100%;
+  display: flex;
+  justify-content: center; /* 가로 가운데 정렬 */
+  align-items: center;     /* 세로 가운데 정렬 */
+  text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3열 */
+    grid-template-rows: repeat(2, auto);    /* 2행 */
+}
+
+.grid-container img{
+    display: flex;
+    width: 350px;
+    height: 300px;
+    display: bock;
+    object-fit: cover;
+    margin: 40px;
+    padding: 20px;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container h1{
+    display: flex;
+    color:white;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container p{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}

@@ -1,0 +1,22 @@
+*{
+    font-family: Roboto, sans-serif;
+    background-color: rgb(31,31,31);
+}
+
+html{
+  overflow-y: scroll;
+}
+
+main {
+  height: calc(100vh - 100px);
+  padding-top: 60px;
+}
+
+.content-area {
+  height: 100%;
+  display: flex;
+  flex-direction: column; /*세로로 줄바꿈*/
+  justify-content: center; /* 가로 가운데 정렬 */
+  align-items: center;     /* 세로 가운데 정렬 */
+  text-align: center;
+}

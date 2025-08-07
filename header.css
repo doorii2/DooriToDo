@@ -1,7 +1,10 @@
 *{
     font-family: Roboto, sans-serif;
-}
+} /*헤더 전체에 적용*/
 
+html{
+    overflow-y: scroll;
+}
 header {
   display: flex; 
   justify-content: space-between; 
@@ -9,6 +12,7 @@ header {
   background-color: rgb(31, 31, 31); /* 헤더 배경 색 */
   color: white;
   padding: 20px 20px; /*좌우 여백*/
+  max-width: 100%;
   width: 100%; /* 화면 너비에 맞게 전체 너비 차지 */
   z-index: 1000; /* 다른 콘텐츠 위에 고정되도록 z-index 설정 */
   height: 40px; /*헤더 높이*/
@@ -39,13 +43,20 @@ header {
 }
 
 /*네비게이션 바 스타일*/
-nav ul {
+.profile-container{
     list-style: none; 
     display: flex; 
+    width: 698px; /*너비 맞춰서 줄어들지 않게 하기*/
     height: 50px;
     margin: 0;
     padding: 0;
+    flex-wrap: nowrap;
 }
+
+nav ul li {
+  white-space: nowrap; /* 줄바꿈 금지 */
+}
+
 
 /*네비게이션 버튼 스타일*/
 .nav-button{
@@ -57,6 +68,7 @@ nav ul {
     margin-right: 50px;
     padding: 10px 30px; /* 여백 추가 */
     transition: color 0.3s ease; /* 호버 시 부드럽게 변화 */
+    flex-wrap: nowrap;
 }
 
 .nav-button:hover{

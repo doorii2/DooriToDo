@@ -8,8 +8,5 @@ function copy() {
 
    // 복사
   navigator.clipboard.writeText(copyTxt.value);
-
-  // 복사완료에 대해 Alert으로 띄우기
-  alert("복사되었습니다.");
 }
 //contact copy
