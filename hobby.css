@@ -22,35 +22,57 @@ main {
 
 .grid-container {
     display: grid;
+    margin: 100px;
     grid-template-columns: repeat(3, 1fr);  /* 3열 */
-    grid-template-rows: repeat(2, auto);    /* 2행 */
-}
-
-.grid-container img{
-    display: flex;
-    width: 350px;
-    height: 300px;
-    display: bock;
-    object-fit: cover;
-    margin: 40px;
+    grid-auto-rows: auto;                   /* 행 높이는 내용에 따라 자동 */
+    gap: 20px;                             /* 그리드 아이템 사이 간격 */
     padding: 20px;
-    padding-top: 40px;
-    align-items: center;
-    justify-content: center;
+    background-color: rgb(31,31,31);
 }
 
-.grid-container h1{
-    display: flex;
-    color:white;
-    font-size: 30px;
-    align-items: center;
-    justify-content: center;
-}
-
-.grid-container p{
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    font-size: 18px;
+.grid-item {
+    background-color: rgb(31,31,31);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
     color: white;
+    user-select: none;
+    cursor: pointer; /* 클릭 가능한 느낌 */
+    transition: transform 0.25s ease;
+}
+
+/* 이미지 크기 및 스타일 */
+.grid-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.25s ease;
+}
+
+/* 이미지 호버 시 확대 */
+.grid-item img:hover {
+    transform: scale(1.15);
+    z-index: 10;
+}
+
+/* 텍스트 기본 숨김 */
+.grid-item h1,
+.grid-item p {
+    display: none;
+    margin: 40px 0 0 0;
+    transition: opacity 0.25s ease;
+}
+
+/* show-text 클래스가 붙으면 텍스트 보임 */
+.grid-item.show-text h1,
+.grid-item.show-text p {
+    display: block;
+}
+
+/* 선택된 그리드 아이템 살짝 확대 */
+.grid-item.show-text {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+    z-index: 20;
 }

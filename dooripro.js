@@ -10,3 +10,7 @@ function copy() {
   navigator.clipboard.writeText(copyTxt.value);
 }
 //contact copy
+
+
+
+

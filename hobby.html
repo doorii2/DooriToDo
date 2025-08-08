@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="header.css"> 
     <link rel="stylesheet" href="hobby.css">
     <!--CSS 연결-->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--AOS 소스-->
 </head>
 <body>
       <!--헤더 영역-->
     <header> 
-            <button class="profile-button" onclick="location.href='dooripro.html'">DFS</button> 
+            <button class="profile-button" onclick="location.href='main.html'">DFS</button> 
         <nav>
             <ul class="profile-container">
                 <li class="profile-item"><button class="nav-button" onclick="location.href='aboutme.html'">About Me</button></li>
@@ -26,24 +30,27 @@
     </header>  
     <main>
         <section class="grid-container"><!--그리드 섹션-->
-                <a href="https://open.spotify.com/playlist/1PN8JSgNs4YtLcKIxCNRdQ?si=kgi3WjGgQ92UtgoaUZw0mQ"><img src="hobbymusic.jpg"></a>
-                <img src="hobbyeating.png">
-                <img src="hobbyani.png">
-            
-                <div class="grid-item">
-                    <h1>Music</h1>
-                    <p>playing guitar and piano</p>
-                </div>
-                <div class="grid-item">
-                    <h1>Tasty</h1>
-                    <p>favorite meal: koeran ramen</p>
-                </div>
-                <div class="grid-item">
-                    <h1>ETC</h1>
-                    <p>watching animation, read comics</p>
-                </div>
-            </div>                     
-        </section>
+        <div class="grid-item" data-aos="zoom-in">
+            <img src="hobbymusic.jpg" alt="Music">
+            <h1>Music</h1>
+            <p>I like playing guitar and piano in my free time. I'm also interested in composing and mixing. My favorit genre of music is hard rock and punk rock.</p>
+        </div>
+
+        <div class="grid-item" data-aos="zoom-in">
+            <img src="hobbyeating.png" alt="Tasty">
+            <h1>Tasty</h1>
+            <p>My favorite meal is Korean Ramen.</p>
+        </div>
+
+        <div class="grid-item" data-aos="zoom-in">
+            <img src="hobbyani.png" alt="ETC">
+            <h1>ETC</h1>
+            <p>I like watching animation or reading comics in my free time.</p>
+        </div>
+    </section>
+
     </main>
+    <script src="hobby.js"></script><!--js 연결-->
+    <script>AOS.init();</script>
 </body>
 </html>

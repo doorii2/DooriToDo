@@ -13,7 +13,7 @@ header {
   color: white;
   padding: 20px 20px; /*좌우 여백*/
   max-width: 100%;
-  width: 100%; /* 화면 너비에 맞게 전체 너비 차지 */
+  width: 100vw; /* 화면 너비에 맞게 전체 너비 차지 */
   z-index: 1000; /* 다른 콘텐츠 위에 고정되도록 z-index 설정 */
   height: 40px; /*헤더 높이*/
   position: fixed;

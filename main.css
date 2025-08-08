@@ -3,10 +3,20 @@
     background-color: rgb(31,31,31);
 }
 
+.grid-container{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden; /*화면 너비에 맞게 고정*/
+}
 .grid-container {
     display: grid;
     margin:0;
+    width: 100%;
     grid-template-columns: repeat(2, 1fr); 
+    overflow: hiddlen;
+    white-space: nowrap;
+    
 }
 
 .grid-image img {
@@ -24,8 +34,9 @@
     height: 77%; /* 텍스트 항목의 높이 설정 */
     background-color: transparent;
     color: white;
-    font-size: 65px;
+    font-size: 6vw; /*vw 이용하면 화면에 맞게 크기 조절됨*/
     border-radius: 30px;
+    
 }
 
 .grid-item button{
